@@ -21,7 +21,7 @@ nav {
 }
 
 nav a {
-    font-size: 13px;
+    font-size: 14px;
     display: inline-block;
     line-height: 24px;
     font-weight: 400;
@@ -32,11 +32,10 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    opacity: .85;
 }
 
 nav img {
-    width: 34px;
+    width: 36px;
     padding: 5px;
     margin: auto 7px;
     cursor: pointer;
@@ -65,11 +64,11 @@ nav button {
 .section-1 .logo {
     display: block;
     margin: 0px auto;
-    margin-top: 107px;
+    margin-top: 200px;
 }
 
 .s-box {
-    width: 580px;
+    width: 600px;
     margin: 0px auto;
     position: relative;
     margin-top: -8px;
@@ -113,7 +112,41 @@ nav button {
     position: absolute;
     top: 13px;
     right: 24px;
+    cursor: pointer;
 }
+
+.s-box .tooltiptext{
+    visibility: hidden;
+    width: 165px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 46%;
+    left: 91.1%;
+    margin-left: -60px;
+}
+
+.vs-icon + .tooltiptext::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.vs-icon:hover + .tooltiptext{
+    visibility: visible;
+}
+
 
 .s-btn {
     border: 1px solid transparent;
