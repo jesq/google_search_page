@@ -132,3 +132,20 @@ nav button {
 .s-btn:hover{
     border: 1px solid #aaa;
 }
+
+.languages {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #111;
+}
+
+.languages a {
+    margin-left: 5px;
+    color: #1a0dab;
+}
+
+.languages a:hover{
+    text-decoration: underline;
+}
+
