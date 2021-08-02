@@ -115,6 +115,46 @@ nav button {
     cursor: pointer;
 }
 
+.s-box .kb-icon{
+    width: 24px;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    cursor: pointer;
+}
+
+.s-box .tooltiptext2{
+    visibility: hidden;
+    width: 220px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 46%;
+    left: 79.7%;
+    margin-left: -60px;
+}
+
+.kb-icon + .tooltiptext2::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.kb-icon:hover + .tooltiptext2{
+    visibility: visible;
+}
+
 .s-box .tooltiptext{
     visibility: hidden;
     width: 165px;
